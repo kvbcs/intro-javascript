@@ -28,9 +28,8 @@ utilisateur.amis.push("Wick")
 utilisateur.amis.splice(2, 1, "John")
 
 //etape 8
-//TODO : à refaire
 for(let i = 0; i<utilisateur.amis.length; i++){
-    console.log(utilisateur.amis.length);
+    console.log("boucle", utilisateur.amis[i]);
 }
 
 //étape 9
@@ -71,7 +70,7 @@ console.log("vérifie majorité",verifierMajorite( 18));
 
 //étape 10 d)
 const afficherProfil = () =>{
-console.log("Bonjjour", utilisateur.firstName, "vous avez", utilisateur.age, "ans et vivez à", utilisateur.ville);
+console.log("Bonjour", utilisateur.firstName, "vous avez", utilisateur.age, "ans et vivez à", utilisateur.ville);
 ( utilisateur)
 }
 
@@ -81,7 +80,6 @@ afficherProfil()
 const ajouterAmi = (nom) =>{
     return utilisateur.amis.push(nom)
 }
-console.log(ajouterAmi("Jean"));
 console.log(utilisateur.amis);
 
 
